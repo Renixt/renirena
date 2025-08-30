@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+
+@theme{
+    --font-mansalva: var(--font-mansalva);
+    --font-inter: var(--font-inter);
+    --font-source-code-pro: var(--font-source-code-pro)
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

@@ -1,6 +1,7 @@
 
 import path from "path";
-import CafeNavbar from "./cafeNavbar";
+import CafeNavbar from "./CafeNavbar";
+import CafeMenu from "./CafeMenu";
 import { promises as fs } from 'fs';
 
 export default async function Cafe(){
@@ -10,5 +11,9 @@ export default async function Cafe(){
 
      
 
-    return <CafeNavbar data={data}/>;
+    return <CafeNavbar data={data}/>
+   
+    
+
+   
 }

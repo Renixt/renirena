@@ -1,6 +1,6 @@
 
 import path from "path";
-import CafeInfo from "./cafeInfo";
+import CafeInfo from "./CafeInfo";
 import { promises as fs } from 'fs';
 
 export default async function Cafe(){

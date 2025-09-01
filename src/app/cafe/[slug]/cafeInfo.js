@@ -121,8 +121,8 @@ export default function cafeInfo({ data }) {
                    {cafe.imagenes && (
                   <div className=" lg:hidden block"> 
                     {Object.entries(cafe.imagenes).map(([key, orden]) => (
-                    <div key={key} className="bg-white h-110 w-90 mb-5 flex justify-center">
-                        <img src={orden} className="h-90 p-4"></img>
+                    <div key={key} className="bg-gradient-to-t from-[#f3f3f3] to-[#FFFFFF] h-90 w-70 mb-5 flex justify-center shadow-md  ">
+                        <img src={orden} className="h-70 p-4"></img>
                     </div>
                 ))}</div>)}
 

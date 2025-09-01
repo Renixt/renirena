@@ -5,6 +5,7 @@
     "direccion": " Rodríguez Familiar no. 42 Col. Jardines de Querétaro.",
     "calificacion": 4,
     "fecha": "12/03/24",
+    "miniatura": "/imagenes/miniatura/1.png",
     "orden": {
       "orden1": {
         "descripcion": "Frapuccino",
@@ -14,7 +15,7 @@
       "orden2": {
         "descripcion": "Moka",
         "precio": 90,
-        "review": "Estaba rico pero tardan mucho."
+        "review": "Estaba rico pero tardan mucho."
       }
     }
   },
@@ -23,6 +24,7 @@
     "slug": "ninety",
     "direccion": "Blvrd Hacienda del Jacal 409, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro.",
     "calificacion": 4,
+    "miniatura": "/imagenes/miniatura/2.png",
     "orden": {
       "orden1": {
         "descripcion": "Frappe Caramel",
@@ -34,10 +36,10 @@
         "precio": null,
         "review": "Bueno y buena crema batida."
       }
-     
     },
     "imagenes": [
-      "https://ejemplo.com/img/ninety-1.jpg"
+      "/imagenes/cafes/ninety1.jpg",
+      "/imagenes/cafes/ninety2.jpg"
     ]
   },
   {
@@ -45,6 +47,7 @@
     "slug": "maniatica",
     "direccion": "Hacienda Grande 310-Local 5 y 6, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro., Mexico",
     "calificacion": 4.5,
+    "miniatura": "/imagenes/miniatura/3.png",
     "orden": {
       "orden1": {
         "descripcion": "Frappuccino",
@@ -61,18 +64,14 @@
         "precio": null,
         "review": "Reni: Chai verde muy bueno, pero dulce, da sed pero rico 9/10"
       }
-    },
-    "imagenes": [
-      "https://ejemplo.com/img/maniatica-1.jpg",
-      "https://ejemplo.com/img/maniatica-2.jpg",
-      "https://ejemplo.com/img/maniatica-3.jpg"
-    ]
+    }
   },
   {
     "titulo": "Pretty Lamb",
     "slug": "pretty-lamb",
     "direccion": "Álamos & La Loma, Qro.",
-    "calificacion": 3,
+    "calificacion": 2,
+    "miniatura": "/imagenes/miniatura/4.png",
     "orden": {
       "orden1": {
         "descripcion": "Latte",
@@ -89,7 +88,7 @@
       "/imagenes/pl-2.jpg",
       "/imagenes/pl-1.jpg"
     ],
-    "audio":[
+    "audio": [
       "/sonidos/audios/pl2.opus"
     ]
   },
@@ -98,6 +97,7 @@
     "slug": "qrosant",
     "direccion": "C. Venustiano Carranza 2A-A, Centro, 76000 Santiago de Querétaro ",
     "calificacion": 4,
+    "miniatura": "/imagenes/miniatura/1.png",
     "orden": {
       "orden1": {
         "descripcion": "Frapuccino",
@@ -115,59 +115,82 @@
         "review": "Amargo y no tan bueno."
       }
     },
-    "imagenes": [
-      "https://ejemplo.com/img/qrosant-1.jpg"
-    ]
+    "imagenes": []
   },
   {
     "titulo": "the coffee",
     "slug": "coffe",
     "direccion": "Calzada de los Arcos, 29 - Jardines de Querétaro - Querétaro",
-    "calificacion": 4.3,
+    "calificacion": 3,
+    "miniatura": "/imagenes/miniatura/4.png",
     "orden": {
       "orden1": {
         "descripcion": "Café con helado de vainilla",
         "precio": null,
         "review": "Delicioso, espeso y rico, aunque caro y pequeño."
       },
-      
       "orden2": {
         "descripcion": "Galleta de Chispas",
         "precio": null,
         "review": "Galletas meh, bonito lugar coreano, gran variedad de bebidas diferentes."
       }
     },
-    "imagenes": [
-      "https://ejemplo.com/img/coffe-1.jpg",
-      "https://ejemplo.com/img/coffe-2.jpg"
-    ]
+    "imagenes": []
   },
   {
     "titulo": "Sensorio",
     "slug": "sensorio",
     "direccion": "Blvrd Jardines de la Hacienda, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro., Mexico",
-    "calificacion": 4.6,
+    "calificacion": 2,
+    "miniatura": "/imagenes/coffe1.png",
     "orden": {
       "orden1": {
         "descripcion": "Te Chai",
-        "precio": 70.00,
+        "precio": 70.0,
         "review": "Reni: Lugar muy bonito, pero la atención y el menú no es tan amistoso para el cliente. Cuando fuimos no tenían ingredientes para dos bebidas y tuvimos que cambiarlas por otras. El té chai NO es de los mejores que he probado, creo que está por debajo del promedio. El horchata late es rico, pero no había. "
       },
       "orden2": {
         "descripcion": "Afogato",
-        "precio": 80.00,
+        "precio": 80.0,
         "review": "Valentini: Buena ambientación pero tenia una vibra algo pretenciosa incluso si así se supone que son la mayoría de cafes de especialidad. No hubo la mejor atención, no nos pudieron aclarar desde el principio la falta de ingredientes."
       },
       "orden3": {
         "descripcion": "Latte",
-        "precio": 80.00,
+        "precio": 80.0,
         "review": "Sofi: Lugar muy pequeño. Su menu es muy limitado y cuando fuimos no tenían la mayoría de las bebidas que se pidieron. Lugar: 7.5, Atención: 7 (no mencionaron que no tenían Matcha hasta que llegaron todas las otras bebidas), Bebidas: 7.5 Las bebidas no tenían nada especial en particular."
       }
-      
     },
     "imagenes": [
-      "https://ejemplo.com/img/sensorio-1.jpg",
-      "https://ejemplo.com/img/sensorio-2.jpg"
+      "/imagenes/cafes/sen1.jpg",
+      "/imagenes/cafes/sen2.jpg"
+    ]
+  },
+  {
+    "titulo": "Villemont",
+    "slug": "villemont",
+    "direccion": "Hacienda El Jacal 701 Int 101 Col El Jacal, 76180 Santiago De Querétaro, Querétaro",
+    "calificacion": 5,
+    "miniatura": "/imagenes/miniatura/2.png",
+    "orden": {
+      "orden1": {
+        "descripcion": "Taro",
+        "precio": 70.0,
+        "review": "Bonita decoracion de osito. "
+      },
+      "orden2": {
+        "descripcion": "Frapuccino",
+        "precio": 80.0,
+        "review": "Frapuccino rico, con crema batida. Buen cafe."
+      },
+      "orden3": {
+        "descripcion": "Latte",
+        "precio": 80.0,
+        "review": "Latte grande muy diluido. Pero late mediano rico."
+      }
+    },
+    "imagenes": [
+      "/imagenes/cafes/vill1.jpg",
+      "/imagenes/cafes/vill2.jpg"
     ]
   }
 ]

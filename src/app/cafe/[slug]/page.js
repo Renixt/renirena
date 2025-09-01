@@ -8,6 +8,7 @@ export default function page() {
 
     const num = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
      const num2 = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+//                <img src={`/imagenes/stain/${num2}.png`} alt={`Imagen número ${num2}`} className="absolute md:h-100 -z-0 left-1/9 md:left-110 top-1/3" ></img>
 
 
     return (
@@ -32,7 +33,6 @@ export default function page() {
                     </div>
                 </div>
 
-                <img src={`/imagenes/stain/${num2}.png`} alt={`Imagen número ${num2}`} className="absolute md:h-100 -z-0 left-1/9 md:left-110 top-1/3" ></img>
             </div>
         </div>
 

@@ -18,7 +18,7 @@ export default function Home() {
     if (cafeAudio.current) {
       cafeAudio.current.play().then(() => {
         setTimeout(() => {
-          router.push("/cafe/cima99"); // navega después de reproducir
+          router.push("/cafe"); // navega después de reproducir
         }, 500); // espera 800ms
       }).catch((err) => {
         console.error("No se pudo reproducir el audio:", err);
@@ -41,7 +41,7 @@ export default function Home() {
             className="h-40 md:h-110 hover:scale-104 hover:-rotate-1 transition-transform duration-200 ease-in-out cursor-pointer"
           />
         </button>
-        <button onClick={() => router.push("/cafe/cima99")}>
+        <button onClick={() => router.push("/cafe")}>
           <img
             src="imagenes/camara.png"
             className="h-40 md:h-110 hover:scale-104 hover:rotate-1 transition-transform duration-200 ease-in-out cursor-pointer"

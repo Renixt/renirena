@@ -3,7 +3,7 @@ import path from "path";
 import CafeInfo from "./CafeInfo";
 import { promises as fs } from 'fs';
 
-export default async function Cafe(){
+export default async function CafeInfoServer(){
     const filePath = path.join(process.cwd(), 'src/data/cafes_mexico.json');
     const file = await fs.readFile(filePath, 'utf8');
     const data= JSON.parse(file);

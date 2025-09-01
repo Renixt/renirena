@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 
-export default function cafeNavbar({ data }) {
+export default function CafeNavbar({ data }) {
 
 
     const [isOpen, setIsOpen] = useState(false);

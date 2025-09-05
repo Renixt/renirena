@@ -5,7 +5,7 @@
     "direccion": " Rodríguez Familiar no. 42 Col. Jardines de Querétaro.",
     "calificacion": 4,
     "fecha": "12/03/24",
-    "miniatura": "/imagenes/miniatura/1.png",
+    "miniatura": "/imagenes/miniatura/m1.png",
     "orden": {
       "orden1": {
         "descripcion": "Frapuccino",
@@ -17,14 +17,17 @@
         "precio": 90,
         "review": "Estaba rico pero tardan mucho."
       }
-    }
+    },
+    "imagenes": [
+      "/imagenes/cafes/cima99.jpg"
+    ]
   },
   {
     "titulo": "Ninety",
     "slug": "ninety",
     "direccion": "Blvrd Hacienda del Jacal 409, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro.",
     "calificacion": 4,
-    "miniatura": "/imagenes/miniatura/2.png",
+    "miniatura": "/imagenes/miniatura/m2.png",
     "orden": {
       "orden1": {
         "descripcion": "Frappe Caramel",
@@ -47,7 +50,7 @@
     "slug": "maniatica",
     "direccion": "Hacienda Grande 310-Local 5 y 6, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro., Mexico",
     "calificacion": 4.5,
-    "miniatura": "/imagenes/miniatura/3.png",
+    "miniatura": "/imagenes/miniatura/m3.png",
     "orden": {
       "orden1": {
         "descripcion": "Frappuccino",
@@ -71,7 +74,7 @@
     "slug": "pretty-lamb",
     "direccion": "Álamos & La Loma, Qro.",
     "calificacion": 2,
-    "miniatura": "/imagenes/miniatura/4.png",
+    "miniatura": "/imagenes/miniatura/m5.png",
     "orden": {
       "orden1": {
         "descripcion": "Latte",
@@ -97,7 +100,7 @@
     "slug": "qrosant",
     "direccion": "C. Venustiano Carranza 2A-A, Centro, 76000 Santiago de Querétaro ",
     "calificacion": 4,
-    "miniatura": "/imagenes/miniatura/1.png",
+    "miniatura": "/imagenes/miniatura/m5.png",
     "orden": {
       "orden1": {
         "descripcion": "Frapuccino",
@@ -122,7 +125,7 @@
     "slug": "coffe",
     "direccion": "Calzada de los Arcos, 29 - Jardines de Querétaro - Querétaro",
     "calificacion": 3,
-    "miniatura": "/imagenes/miniatura/4.png",
+    "miniatura": "/imagenes/miniatura/m1.png",
     "orden": {
       "orden1": {
         "descripcion": "Café con helado de vainilla",
@@ -142,7 +145,7 @@
     "slug": "sensorio",
     "direccion": "Blvrd Jardines de la Hacienda, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro., Mexico",
     "calificacion": 2,
-    "miniatura": "/imagenes/coffe1.png",
+    "miniatura": "/imagenes/miniatura/m6.png",
     "orden": {
       "orden1": {
         "descripcion": "Te Chai",
@@ -170,7 +173,7 @@
     "slug": "villemont",
     "direccion": "Hacienda El Jacal 701 Int 101 Col El Jacal, 76180 Santiago De Querétaro, Querétaro",
     "calificacion": 5,
-    "miniatura": "/imagenes/miniatura/2.png",
+    "miniatura": "/imagenes/miniatura/m4.png",
     "orden": {
       "orden1": {
         "descripcion": "Taro",

@@ -24,7 +24,7 @@ export default function cafeInfo({ data }) {
            
 
                   {cafe.imagenes?.[0] && (
-                <div className="lg:flex hidden bg-gradient-to-t from-[#f5f5f5] to-[#FFFFFF] h-110 w-90 mb-5  justify-center rotate-6 absolute left-1/8 top-28 shadow-md hover:scale-105 transition-transform duration-300 ease-in-out hover:z-10 border-1 border-gray-100">
+                <div className="lg:flex hidden bg-gradient-to-t from-[#f5f5f5] to-[#FFFFFF] h-110 w-90 mb-5  justify-center rotate-6 absolute left-1/8 top-28 shadow-md hover:scale-105 transition-transform duration-600 ease-in-out hover:z-10 border-1 border-gray-100">
                     <img src={cafe.imagenes[0]} className="h-90 p-4"></img>
                 </div>
                   )}

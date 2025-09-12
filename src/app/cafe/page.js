@@ -14,7 +14,7 @@ export default  function Cafe(){
             
               <Navbar/>
               <div className=" flex flex-col justify-center content-center items-center">
- <CafeMenuServer/>
+                 <CafeMenuServer/>
               </div>
              
               

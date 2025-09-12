@@ -41,7 +41,7 @@ export default function Home() {
             className="h-40 md:h-110 hover:scale-104 hover:-rotate-1 transition-transform duration-200 ease-in-out cursor-pointer"
           />
         </button>
-        <button onClick={() => router.push("/cafe")}>
+        <button onClick={() => router.push("/camarita")}>
           <img
             src="imagenes/camara.png"
             className="h-40 md:h-110 hover:scale-104 hover:rotate-1 transition-transform duration-200 ease-in-out cursor-pointer"

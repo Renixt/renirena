@@ -8,7 +8,7 @@ export default function CafeMenu({ data }) {
 
 
     return (
-        <div className='z-10  mr-25 ml-25'>
+        <div className='z-10  mr-50 ml-50 '>
          
 
            

@@ -100,7 +100,7 @@
     "slug": "qrosant",
     "direccion": "C. Venustiano Carranza 2A-A, Centro, 76000 Santiago de Querétaro ",
     "calificacion": 4,
-    "miniatura": "/imagenes/miniatura/m5.png",
+    "miniatura": "/imagenes/miniatura/m10.png",
     "orden": {
       "orden1": {
         "descripcion": "Frapuccino",
@@ -194,6 +194,57 @@
     "imagenes": [
       "/imagenes/cafes/vill1.jpg",
       "/imagenes/cafes/vill2.jpg"
+    ]
+  },
+  {
+    "titulo": "Blume",
+    "slug": "blume",
+    "direccion": "Boulevard Jardines De La Hacienda 305, 76180 Santiago De Queretaro, Queretaro",
+    "calificacion": 2,
+    "miniatura": "/imagenes/miniatura/m7.png",
+    "orden": {
+      "orden1": {
+        "descripcion": "Chai",
+        "precio": null,
+        "review": "Reni: Chai con un hit de expreso. Estuvo rico, muy aromático y especiado. Me gustó. Lo tomé caliente y fue buena opción. He tomado mejores pero está bien. 8.5/10"
+      },
+      "orden2": {
+        "descripcion": "Frappe Taro",
+        "precio": null,
+        "review": "Valentini: Cremoso, ligero, buena trituracion de hielo, no sentí que supiera a agua al final del vasito. Le ponen poquita crema batida, que bueno pq mucha empalaga y se queda al final. Sabor dulce pero sin empalagar. 10/10"
+      },
+      "orden3": {
+        "descripcion": "Frappuccino",
+        "precio": null,
+        "review": "Gran frappe. Buen tamaño. Crema batida :p 9/10"
+      }
+    },
+    "imagenes": [
+      "/imagenes/cafes/blume1.jpg",
+      "/imagenes/cafes/blume2.jpg"
+    ]
+  },
+  {
+    "titulo": "Cafele",
+    "slug": "cafele",
+    "direccion": "Boulevard de las ciencias 3045, Santa Fé, 76230 Juriquilla, Qro.",
+    "calificacion": 2,
+    "miniatura": "/imagenes/miniatura/m9.png",
+    "orden": {
+      "orden1": {
+        "descripcion": "Frappe Capuchino",
+        "precio": 75,
+        "review": "Muy bonito lugar, pero el frappe muy aguado, mas leche que café. Pero +cremabatidaaaa"
+      },
+      "orden2": {
+        "descripcion": "Caramel Latte",
+        "precio": 72,
+        "review": "le faltaba algo de caramelo, sabía más a leche. Ya ni café."
+      }
+    },
+    "imagenes": [
+      "/imagenes/cafes/cafetato.jpg",
+      "/imagenes/cafes/cafetato2.jpg"
     ]
   }
 ]

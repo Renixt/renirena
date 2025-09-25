@@ -12,6 +12,7 @@
     "@react-three/drei": "^10.7.5",
     "@react-three/fiber": "^9.3.0",
     "axios": "^1.10.0",
+    "lottie-react": "^2.4.1",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

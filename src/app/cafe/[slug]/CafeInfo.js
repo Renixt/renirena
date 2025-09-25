@@ -135,7 +135,7 @@ export default function cafeInfo({ data }) {
           {Object.entries(cafe.imagenes).map(([key, orden], index) => (
             <div
               key={key}
-              className={`mb-5 flex h-90 w-70 justify-center bg-gradient-to-t from-[#f3f3f3] to-[#FFFFFF] shadow-md  ${rotation[index] || ''}`}
+              className={`transition-transform duration-600 ease-in-out hover:z-10 hover:scale-105 mb-5 flex h-90 w-70 justify-center bg-gradient-to-t from-[#f3f3f3] to-[#FFFFFF] shadow-md  ${rotation[index] || ''}`}
             >
               <img src={orden} className='h-70 p-4'></img>
             </div>

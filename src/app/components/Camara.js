@@ -1,10 +1,22 @@
-import React, { useRef } from 'react'
+import React, { use, useEffect, useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
+import * as THREE from "three";
 
-export function Camara(props) {
+
+export function Camara({ axis = "y", ...props }) {
   const { nodes, materials } = useGLTF('/polaroid_image_systemspectra.glb')
+ const ref = useRef();
+
+  const SPEED = .3; // radianes por segundo
+
+useFrame((_, delta) => {
+  if (!ref.current) return;
+  ref.current.rotation.y += SPEED * delta;
+});
   return (
-    <group {...props} dispose={null}>
+    <group ref={ref} {...props} dispose={null} 
+    >
       <group rotation={[-Math.PI / 2, 0.007, 3.109]}>
         <mesh
           castShadow

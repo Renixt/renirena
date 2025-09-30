@@ -31,11 +31,10 @@ export default function Camarita() {
 
   // Cargar nombres de imágenes 1 sola vez cuando se monta el componente
   useEffect(() => {
-    fetch('/fots')
-      .then(r => r.json())
-      .then(data => setImages(data.images || []))
-      .catch(() => setImages([]))
-  }, [])
+  fetch("/fots.json")
+    .then(r => r.json())
+    .then(data => setImages(data.images || []));
+}, []);
 
   const openRandomImage = () => {
     if (!images.length) {

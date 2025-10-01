@@ -1,10 +1,10 @@
 export default function Loading() {
   return (
-    <div className='relative min-h-screen w-full overflow-hidden bg-gradient-to-bl from-[#f6dfb2] to-[#FFFFFF]'>
+      <div className='relative min-h-screen w-full overflow-hidden bg-gradient-to-bl from-[#f6dfb2] to-[#FFFFFF]'>
       <div className='pointer-events-none absolute top-0 right-0 bottom-0 left-0 bg-[linear-gradient(to_right,#0000001a_1px,transparent_1px),linear-gradient(to_bottom,#0000001a_1px,transparent_1px)] bg-[size:20px_20px]'></div>
       <div className='pointer-events-none absolute top-0 right-0 bottom-0 left-0 bg-[radial-gradient(125%_125%_at_50%_10%,rgba(249,173,44,0.3)_40%,rgba(248,250,252,1)_100%)]'></div>
 
-      <div className='flex h-48 flex-col items-center justify-center content-center'>
+      <div className='flex h-screen flex-col items-center justify-center content-center'>
         <div className='relative flex flex-col items-center'>
           {/* Humo */}
           <div className='absolute -top-2 -ml-1 flex space-x-2'>
@@ -28,9 +28,9 @@ export default function Loading() {
           </svg>
         </div>
 
-       {/* <p className='mt-4 font-mono text-sm text-[#562a17]'>
+        <p className=' font-mono text-sm text-[#562a17]'>
           Preparando tu café…
-        </p>*/}
+        </p>
       </div>
     </div>
   )

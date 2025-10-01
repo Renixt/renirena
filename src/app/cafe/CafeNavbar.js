@@ -1,35 +1,53 @@
-"use client"
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-
+'use client'
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function CafeNavbar({ data }) {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen)
+  }
 
+  return (
+    <div className='relative z-10 w-64 md:ml-20'>
+      <div>
+        <button onClick={toggleNavbar}>
+          {' '}
+          <img
+            src='/imagenes/cafe3.png'
+            className='h-10 transition-transform duration-300 ease-in-out hover:scale-107 hover:cursor-pointer md:h-30'
+          ></img>
+        </button>
+      </div>
 
-    const [isOpen, setIsOpen] = useState(false);
-    const toggleNavbar = () => {
-        setIsOpen(!isOpen);
-    };
-
-    return (
-        <div className='relative w-64 md:ml-20 z-10'>
-            <div>
-                <button onClick={toggleNavbar}> <img src="/imagenes/cafe3.png" className=" h-10 md:h-30 hover:scale-107 transition-transform duration-300 ease-in-out hover:cursor-pointer"></img></button>
-            </div>
-
-           { isOpen&& (
-                <div className='text-sm md:text-3xl'>
-                    {data.map((data, key) => {
-                        return (<div  key={key} className='mb-2 md:mb-4'>
-                            <Link className="font-mansalva hover:text-[#A54E1A] hover:text-4xl text-[#7A370E] cursor-pointer transition-discrete duration-300 ease-in-out" href={`/cafe/${encodeURIComponent(data.slug)}`}>{data.titulo}</Link></div>) ;
-                    })}
-                </div>)}
-         
-        </div>
-    );
+      {isOpen && (
+        <motion.div
+          className='rounded-xl bg-gradient-to-b from-amber-50/50 to-amber-50/0 p-5 text-sm md:text-2xl'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{opacity:0}}
+          transition={{ duration: .5, ease: 'easeInOut' }}
+        >
+          {data.map((data, key) => {
+            return (
+              <div key={key} className='mb-2 md:mb-3'>
+                <Link
+                  className='font-mansalva ml-5 cursor-pointer font-medium text-[#7A370E] transition-discrete duration-500 ease-out hover:tracking-widest hover:text-[#A54E1A]'
+                  href={`/cafe/${encodeURIComponent(data.slug)}`}
+                >
+                  {data.titulo}
+                </Link>
+              </div>
+            )
+          })}
+        </motion.div>
+      )}
+    </div>
+  )
 }
 
- /*  
+/*  
                 
                 
                 

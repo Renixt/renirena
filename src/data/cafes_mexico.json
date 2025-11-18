@@ -67,7 +67,11 @@
         "precio": null,
         "review": "Reni: Chai verde muy bueno, pero dulce, da sed pero rico 9/10"
       }
-    }
+    },
+    "imagenes": [
+      "/imagenes/cafes/man.jpg",
+      "/imagenes/cafes/man2.jpg"
+    ]
   },
   {
     "titulo": "Pretty Lamb",
@@ -245,6 +249,90 @@
     "imagenes": [
       "/imagenes/cafes/cafetato.jpg",
       "/imagenes/cafes/cafetato2.jpg"
+    ]
+  },
+   {
+    "titulo": "Noname",
+    "slug": "noname",
+    "direccion": "Jardines",
+    "calificacion": 2,
+    "miniatura": "/imagenes/miniatura/noname.png",
+    "orden": {
+      "orden1": {
+        "descripcion": "Frapper Frutos Rojos",
+        "precio": null,
+        "review": "Valentini: Dogo bbq 10/10 muy bueno igual las papas top. Frappe de frutos natural muy bueno , no tan dulce, bastante fresco pero en lo personal si creo q le faltó un poquis de azúcar"
+      },
+      "orden2": {
+        "descripcion": "Frapuccino Moka",
+        "precio": null,
+        "review": "Reni: frappe de mocha 75 esta bueno sabe a chocomilk con cafe como esperado"
+      },
+      "orden3": {
+        "descripcion": "Frapuccino",
+        "precio": null,
+        "review": "Muy bueno buen tamaño, gran crema batida, duró hasta el final. 8/10"
+      }
+    },
+    "imagenes": [
+      "/imagenes/cafes/jard1.jpg",
+      "/imagenes/cafes/jard2.jpg"
+    ]
+  },
+  {
+    "titulo": "Silverio",
+    "slug": "silverio",
+    "direccion": "Blvd. Hacienda del Jacal 211, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro.",
+    "calificacion": 2,
+    "miniatura": "/imagenes/miniatura/m8.png",
+    "orden": {
+      "orden1": {
+        "descripcion": "Mango Chamoyada",
+        "precio": null,
+        "review": "Reni: Está muy bien licuado y el sabor es bueno. Hay suficiente hoy y suficiente mango. Siento que podría usar más mango congelado y menos hielo, para que sea más espeso y tenga sabor más rato."
+      },
+      "orden2": {
+        "descripcion": "Frapuccino",
+        "precio": null,
+        "review": "Tamaño medianillo, casi pequeño. Pero buen sabor y buena crema batida y granitos de café. El lugar es bonito, agradable, cool para ir a trabajar o desayunar."
+      }
+    },
+    "imagenes": [
+      "/imagenes/cafes/sr.jpg",
+      "/imagenes/cafes/sr2.jpg"
+    ]
+  },
+  {
+    "titulo": "Fondo Café",
+    "slug": "fondo",
+    "direccion": "Rodríguez Familiar 12, Jardines de Queretaro, 76020 Santiago de Querétaro, Qro.",
+    "calificacion": 2,
+    "miniatura": "/imagenes/miniatura/fondo.png",
+    "orden": {
+      "orden1": {
+        "descripcion": "Dirty Chai Frio",
+        "precio": null,
+        "review": "Reni: El lugar es muy bonito, el mobiliario está cómodo Y la atención es buena. A pesar de tener gente siento que no tardaron tanto y se disculparon por la tardanza entonces me imagino que es un lugar muy rápido. 8/10"
+      },
+      "orden2": {
+        "descripcion": "Butter Biscoff ",
+        "precio": null,
+        "review": "Valentini: Cremoso, perfecto balance entre dulce y café. Ambientación bonita y concepto interesante. 10/10"
+      },
+      "orden3": {
+        "descripcion": "Frappe Moka",
+        "precio": null,
+        "review": "No tenian frappuccino, pero las otras bebidas estaban buenas. Buen tamaño de vaso y muy rico, sin crema batida. El edificio y lugar muy bonito, lindo. 9/10"
+      },
+      "orden4": {
+        "descripcion": "French Toast",
+        "precio": null,
+        "review": "Bonita presentación pero no taaaaan rico. Meeeh"
+      }
+    },
+    "imagenes": [
+      "/imagenes/cafes/fondo1.jpg",
+      "/imagenes/cafes/fondo2.jpg"
     ]
   }
 ]

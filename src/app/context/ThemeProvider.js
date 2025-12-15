@@ -1,0 +1,19 @@
+//estado global para el theme
+'use client'
+import ThemeContext from './ThemeContext'
+import { useState } from 'react'
+
+//used for switching themes
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState('dark')
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'))
+  }
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}

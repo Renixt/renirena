@@ -252,9 +252,9 @@
     ]
   },
    {
-    "titulo": "Noname",
-    "slug": "noname",
-    "direccion": "Jardines",
+    "titulo": "Clemente",
+    "slug": "clemente",
+    "direccion": "Jardines de la Hacienda",
     "calificacion": 2,
     "miniatura": "/imagenes/miniatura/noname.png",
     "orden": {

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function CafeMenu({ data }) {
   return (
-    <div className='z-10 lg:mr-50 lg:ml-50'>
+    <div className='z-10 mx-auto max-w-[1200px] lg:mr-50 lg:ml-50'>
       <div className='flex flex-row flex-wrap items-center justify-center gap-5'>
         {data.map((data, key) => {
           return (

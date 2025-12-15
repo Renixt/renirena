@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "title": "Wicked For Good",
+    "image": "1.jpg",
+    "genre": "drama",
+    "rating": "7.5"
+  },
+  {
+    "id": 2,
+    "title": "Chainsaw Man",
+    "image": "2.jpg",
+    "genre": "anime",
+    "rating": "9"
+  },
+  {
+    "id": 3,
+    "title": "Jujutsu Kaisen Movie",
+    "image": "3.jpg",
+    "genre": "anime",
+    "rating": "8.5"
+  },
+  {
+    "id": 4,
+    "title": "Together",
+    "image": "4.jpg",
+    "genre": "body horror",
+    "rating": "9.3"
+  },
+  {
+    "id": 5,
+    "title": "The Substance",
+    "image": "5.jpg",
+    "genre": "body horror",
+    "rating": "10"
+  },
+  {
+    "id": 6,
+    "title": "Superman ",
+    "image": "6.jpg",
+    "genre": "action",
+    "rating": "10"
+  },
+  {
+    "id": 7,
+    "title": "Frankeistein",
+    "image": "7.jpg",
+    "genre": "drama / action",
+    "rating": "8"
+  },
+  {
+    "id": 8,
+    "title": "Sinners",
+    "image": "8.jpg",
+    "genre": "period action",
+    "rating": "8.5"
+  },
+  {
+    "id": 9,
+    "title": "Mickey 17",
+    "image": "9.jpg",
+    "genre": "horror",
+    "rating": "10"
+  },
+  {
+    "id": 10,
+    "title": "La Casa del Dragon",
+    "image": "10.jpg",
+    "genre": "fantasy",
+    "rating": "10"
+  },
+  {
+    "id": 11,
+    "title": "Kpop Demon Hunters",
+    "image": "11.jpg",
+    "genre": "action / animation",
+    "rating": "8.5"
+  },
+  {
+    "id": 12,
+    "title": "Anora",
+    "image": "12.jpg",
+    "genre": "drama",
+    "rating": "9"
+  },
+  {
+    "id": 13,
+    "title": "Flow",
+    "image": "13.jpg",
+    "genre": "animation",
+    "rating": "8"
+  },
+  {
+    "id": 14,
+    "title": "28 years later",
+    "image": "14.jpg",
+    "genre": "horror",
+    "rating": "7.5"
+  },
+  {
+    "id": 15,
+    "title": "The Ugly Stepsister",
+    "image": "15.jpg",
+    "genre": "horror",
+    "rating": "8"
+  },
+  {
+    "id": 16,
+    "title": "Paddington in Peru",
+    "image": "16.jpg",
+    "genre": "adventure / animation",
+    "rating": "7"
+  },
+  {
+    "id": 17,
+    "title": "El leon no es como lo pintan",
+    "image": "17.jpg",
+    "genre": "animation",
+    "rating": "10"
+  },
+  {
+    "id": 18,
+    "title": "Thunderbolts",
+    "image": "18.jpg",
+    "genre": "action",
+    "rating": "8.5"
+  },
+  {
+    "id": 19,
+    "title": "Demon Slayer",
+    "image": "19.jpg",
+    "genre": "anime",
+    "rating": "9"
+  },
+  {
+    "id": 20,
+    "title": "Como entrenar a tu dragon",
+    "image": "20.jpg",
+    "genre": "animation",
+    "rating": "10"
+  },
+  {
+    "id": 21,
+    "title": "Robots Dream",
+    "image": "21.jpg",
+    "genre": "animation",
+    "rating": "9.5"
+  },
+  {
+    "id": 22,
+    "title": "five nights at freddy's 2",
+    "image": "22.jpg",
+    "genre": "animation / horror",
+    "rating": "7.1"
+  }
+]

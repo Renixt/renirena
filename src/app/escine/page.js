@@ -15,7 +15,7 @@ export default function page() {
   //useEffect: render one time when the comp renders
   //fetch info from the json file
   useEffect(() => {
-    fetch('movies.json') //fetch
+    fetch('/api/escine') //fetch
       .then(response => response.json()) //make it sjon
       .then(data => setMovies(data.reverse())) //put it in data, then movies
   }, [])

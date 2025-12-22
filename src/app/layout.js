@@ -1,4 +1,7 @@
 import Footer from './components/Footer'
+import './styles.css'
+import './styles2.css'
+
 import {
   Geist,
   Geist_Mono,

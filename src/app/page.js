@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation' // App Router
 import Navbar from './components/Navbar'
@@ -34,7 +33,7 @@ export default function Home() {
     <main className='flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-bl from-[#B73E64] to-[#FFD1EB]'>
       <div className=''>
         <h1 className='font-inter text-3xl font-[700] text-white md:text-9xl'>
-          renirenaa
+          renirena
         </h1>
       </div>
       <div className='mt-10 flex flex-row flex-wrap justify-center'>

@@ -5,7 +5,7 @@
   color: #fff;
 
   /* color base */
-  background-color: #2b2947;
+  background-color: #2f0000;
 
   /* capas */
   background-image:
@@ -18,8 +18,8 @@
       /* degradado vertical (al fondo de todo) */
       linear-gradient(
         to right,              /* vertical */
-        #2b2947 0%,             /* color base */
-        #4a476b 100%            /* color más claro o más luminoso */
+        #000000 0%,             /* color base */
+        #490b0b 100%            /* color más claro o más luminoso */
       );
 
   background-size:
@@ -46,8 +46,8 @@
       /* degradado vertical (al fondo de todo) */
       linear-gradient(
         to right,              /* vertical */
-        #8a689e 0%,             /* color base */
-        #7a769f 100%            /* color más claro o más luminoso */
+          #000000 0%,             /* color base */
+          rgba(190, 130, 0, 0.458) 40%                 /* color más claro o más luminoso */
       );
 
   background-size:
@@ -68,9 +68,11 @@
 }
 
 .search-input {
+  display: block;
+  overflow: hidden;
   padding: 15px;
-  margin: 25px 10px;
-  width: 100%;
+  margin: 25px auto;
+  width: 90%;
   font-size: 16px;
   border-radius: 100px;
   border: 1px solid #ccc;
@@ -90,6 +92,8 @@
 }
 
 .filter-dropdown {
+  
+  font-family: inter;
   padding: 6px;
   margin: 10px;
   border-radius: 50px;
@@ -108,16 +112,23 @@
 
 /* Movie Card Styles */
 .movie-card {
-  color: #362342;
-  background-image: linear-gradient(to bottom,  #e8d6e9,  #e8d6e9, #e8d6e9, #aea7ae);
-  border-radius: 1px 1px 8px 8px;
+  background-color:  #eeeeee;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 29px,
+    rgba(0, 0, 0, 0.211) 38px
+  );
+  border-radius: 1px 1px 1px 1px;
+  border-color: #000000;
+  border-width: 2px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
 }
 
 .movie-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 .movie-card img {
@@ -129,7 +140,7 @@
 }
 
 .movie-card-info {
-  padding: 1rem;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -137,33 +148,30 @@
 }
 
 .movie-card-title {
-  letter-spacing:-1px;
+    color: #000000;
+
+  letter-spacing:.9px;
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight:900;
-  line-height: 90%;
   padding-bottom: 10px;
   padding-top: 10px;
 }
 
 .movie-card-rating {
-
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
-  background:#3b05625a;
   padding: 3px 10px;
-  margin: 0 auto;
   width: 50px;
   border-radius: 50px;
 }
 
 .movie-card-genre {
-  color: rgb(233, 220, 239);
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-right: 10px;
-  background:#3b05625a;
-  padding: 4px 10px;
+    text-transform: uppercase;
+
+  color: rgb(209, 1, 1);
+  font-weight:700;
+  font-size: 1rem;
   margin: 10 auto;
   width: 50px;
   border-radius: 50px;
@@ -197,15 +205,15 @@
 }
 
 .rating-good {
-  color: rgb(133, 209, 103);
+  color: rgb(50, 154, 9);
 }
 
 .rating-ok {
-  color: rgb(254, 189, 69);
+  color: rgb(222, 147, 8);
 }
 
 .rating-bad {
-  color: rgb(255, 123, 123);
+  color: rgb(177, 3, 3);
 }
 
 .title {

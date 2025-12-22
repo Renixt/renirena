@@ -52,7 +52,7 @@ export default function Home() {
 
         <button onClick={() => router.push('/escine')}>
           <img
-            src='imagenes/escine.png'
+            src='imagenes/escineee.png'
             className='m-2 h-40 cursor-pointer transition-transform duration-200 ease-in-out hover:scale-104 hover:rotate-1 md:h-110'
           />
         </button>

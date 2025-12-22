@@ -7,7 +7,7 @@ export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
 
   const [searchTerm, setSearchTerm] = useState('')
   const [genre, setGenre] = useState('All Genres')
-  const [rating, setRating] = useState('All')
+  const [rating, setRating] = useState('All Ratings')
 
   const handleSearchChange = e => {
     setSearchTerm(e.target.value)
@@ -36,7 +36,7 @@ export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
   //solo para los que cumplen la condición del caso seleccionado.
   const matchesRating = (movie, rating) => {
     switch (rating) {
-      case 'All':
+      case 'All Ratings':
         return true
 
       case 'GOD':
@@ -79,37 +79,32 @@ export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
       ></input>
 
       <div className='filter-bar'>
-        <div className='filter-slot'>
-          <label>Genre</label>
-          <select
-            className='filter-dropdown'
-            value={genre}
-            onChange={handleGenreChange}
-          >
-            <option>All Genres</option>
-            <option>Horror</option>
-            <option>Anime</option>
-            <option>Fantasy</option>
-            <option>Adventure</option>
-            <option>Animation</option>
-            <option>Action</option>
-            <option>Drama</option>
-          </select>
-        </div>
-        <div className='filter-slot'>
-          <label>Rating</label>
-          <select
-            className='filter-dropdown'
-            value={rating}
-            onChange={handleRatingChange}
-          >
-            <option>All</option>
-            <option>GOD</option>
-            <option>Good</option>
-            <option>Meeh</option>
-            <option>Bad</option>
-          </select>
-        </div>
+        <select
+          className='filter-dropdown'
+          value={genre}
+          onChange={handleGenreChange}
+        >
+          <option>All Genres</option>
+          <option>Horror</option>
+          <option>Anime</option>
+          <option>Fantasy</option>
+          <option>Adventure</option>
+          <option>Animation</option>
+          <option>Action</option>
+          <option>Drama</option>
+        </select>
+
+        <select
+          className='filter-dropdown'
+          value={rating}
+          onChange={handleRatingChange}
+        >
+          <option>All Ratings</option>
+          <option>GOD</option>
+          <option>Good</option>
+          <option>Meeh</option>
+          <option>Bad</option>
+        </select>
       </div>
 
       <div className='movies-grid'>

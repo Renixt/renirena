@@ -5,7 +5,7 @@
   color: #fff;
 
   /* color base */
-  background-color: #2f0000;
+  background-color: #e3f3fb;
 
   /* capas */
   background-image:
@@ -18,8 +18,8 @@
       /* degradado vertical (al fondo de todo) */
       linear-gradient(
         to right,              /* vertical */
-        #000000 0%,             /* color base */
-        #490b0b 100%            /* color más claro o más luminoso */
+        #739db3 0%,             /* color base */
+        #739db3 100%            /* color más claro o más luminoso */
       );
 
   background-size:
@@ -33,7 +33,7 @@
   color: #fff;
 
   /* color base */
-  background-color: #2b2947;
+  background-color: #e3f3fb;
 
   /* capas */
   background-image:
@@ -46,14 +46,14 @@
       /* degradado vertical (al fondo de todo) */
       linear-gradient(
         to right,              /* vertical */
-          #000000 0%,             /* color base */
-          rgba(190, 130, 0, 0.458) 40%                 /* color más claro o más luminoso */
+        #739db3 0%,             /* color base */
+        #739db3 100%            /* color más claro o más luminoso */
       );
 
   background-size:
       40px 40px,   /* cuadricula horizontal */
       40px 40px,   /* cuadricula vertical */
-      100% 100%;   /* degradado */
+      100% 100%;   
 }
 
 .container {
@@ -119,9 +119,8 @@
     transparent 29px,
     rgba(0, 0, 0, 0.211) 38px
   );
-  border-radius: 1px 1px 1px 1px;
-  border-color: #000000;
-  border-width: 2px;
+  border-color: #696969;
+  border-width: .5px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
@@ -140,6 +139,7 @@
 }
 
 .movie-card-info {
+  margin-top: 2px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -148,14 +148,12 @@
 }
 
 .movie-card-title {
-    color: #000000;
-
-  letter-spacing:.9px;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight:900;
+    color: #252525;
+  text-transform:uppercase;
+  font-size: 1.4rem;
+  font-weight:700;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-inline: 10px ;
 }
 
 .movie-card-rating {
@@ -163,7 +161,6 @@
   font-weight: bold;
   padding: 3px 10px;
   width: 50px;
-  border-radius: 50px;
 }
 
 .movie-card-genre {

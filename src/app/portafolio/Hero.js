@@ -9,18 +9,18 @@ export default function Hero() {
       <div className='flex flex-row gap-11'>
         <div className='flex items-center border-2 border-y-0 border-r-0 border-l-0 pl-11 transition-transform ease-in-out hover:scale-105 hover:rotate-12'>
           <p className='font-mansalva -rotate-45 text-7xl font-extrabold text-gray-800'>
-            '<span className='text-[#da6d6d]'>´</span>
+            '<span className='text-[#c83838]'>´</span>
           </p>
           <img
-            src='/imagenes/me2.png'
+            src='/portafolio/renisvg.svg'
             className='h-55 transition-transform ease-in-out hover:scale-105 hover:-rotate-12'
           ></img>
           <p className='font-mansalva mb-10 rotate-45 text-7xl font-extrabold text-gray-800'>
-            '<span className='text-[#da6d6d]'>´</span>
+            '<span className='text-[#c83838]'>´</span>
           </p>
         </div>
 
-        <div className='info border-2 border-y-0 border-r-0 border-l-gray-400 px-11 py-16'>
+        <div className='info px-11 py-16'>
           <h1 className='font-mansalva text-7xl font-extrabold text-gray-800'>
             Renata Castillo
           </h1>

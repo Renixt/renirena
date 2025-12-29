@@ -63,10 +63,8 @@ export default function MovieForm() {
   }
 
   return (
-    <div>
-      <h1 className='title font-inter font-extrabold uppercase'>
-        Nueva Pelicula
-      </h1>
+    <div className='rounded-2xl border px-16 py-5'>
+      <h1 className='title font-inter font-bold'>Nueva Pelicula</h1>
       <form className='movie-form' onSubmit={handleSubmit}>
         <div>
           <label>Titulo</label>

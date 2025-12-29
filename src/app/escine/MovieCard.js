@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles.css'
+import Image from 'next/image'
 
 export default function MovieCard({ movie, isWatchlisted, toggleWatchlist }) {
   const handleError = e => {
@@ -20,11 +21,13 @@ export default function MovieCard({ movie, isWatchlisted, toggleWatchlist }) {
 
   return (
     <div key={movie.id} className='movie-card'>
-      <img
-        src={`images/${movie.image}`}
+      <Image
+        width={250}
+        height={350}
+        src={`/images/${movie.image}`}
         alt={movie.title}
         onError={handleError}
-      ></img>
+      ></Image>
       <div className='movie-card-info'>
         <div>
           <span className='movie-card-genre'>{movie.genre}</span>

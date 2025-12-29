@@ -1,6 +1,6 @@
 'use client'
 import React, { useContext } from 'react'
-import MoviesGrid from '../components/MoviesGrid'
+import MoviesGrid from './MoviesGrid'
 import { useState, useEffect } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
@@ -36,7 +36,7 @@ export default function page() {
     <div className={theme}>
       <Navbar /> <Header />
       <Palomitas />
-      <div className='container'>
+      <div className='container3'>
         <MoviesGrid
           movies={movies}
           watchlist={watchlist}

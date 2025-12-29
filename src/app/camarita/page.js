@@ -1,5 +1,5 @@
 'use client'
-
+import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
@@ -48,9 +48,8 @@ export default function Camarita() {
       setRotateNum(randomRotate)
       const random = images[Math.floor(Math.random() * images.length)]
       setImgSrc(random)
-      setUsedImages(prev => [...prev, {...random,rotateClass: randomRotate}]);
+      setUsedImages(prev => [...prev, { ...random, rotateClass: randomRotate }])
     }
-
   }
 
   const openRandomImage = () => {
@@ -71,10 +70,7 @@ export default function Camarita() {
 
   return (
     <div className=''>
-      <div className='relative w-full min-h-[200vh]
-    bg-[url(/imagenes/camara/cork.jpg)]
-    bg-repeat-y
-    [background-size:100%_auto]'>
+      <div className='relative min-h-[200vh] w-full bg-[url(/imagenes/camara/cork.jpg)] [background-size:100%_auto] bg-repeat-y'>
         <Navbar />
 
         {/* Modal */}
@@ -102,12 +98,15 @@ export default function Camarita() {
                 transition: { duration: 0.2, ease: 'easeIn' }
               }}
             >
-              <div className='relative z-0'>
+              <div className='relative z-0 bg-black'>
                 {imgSrc ? (
-                  <img
+                  <Image
+                    width={700}
+                    height={800}
                     src={imgSrc.src}
                     alt='Random'
-                    className='max-h-[90vh] max-w-[90vw] md:max-h-[60vh] md:max-w-[60vw]'
+                    className='max-h-[90vh] max-w-[90vw] object-contain md:max-h-[60vh] md:max-w-[60vw]'
+                    sizes='(max-width: 768px) 90vw, 60vw'
                   />
                 ) : (
                   <div className='p-6 text-sm text-gray-600'>
@@ -129,7 +128,7 @@ export default function Camarita() {
             </motion.dialog>
           )}
         </AnimatePresence>
-        <div className='h-[100vh] w-[100vw] cursor-pointer z-10'>
+        <div className='z-10 h-[100vh] w-[100vw] cursor-pointer'>
           <Canvas className='z-10'>
             <Environment preset='apartment' />
             <OrbitControls enableZoom={false} enablePan={false} />
@@ -137,21 +136,21 @@ export default function Camarita() {
           </Canvas>
         </div>
 
-       <div className="flex flex-row flex-wrap gap-10 absolute top-10 content-center justify-center z-0 bg-[url('/imagenes/camara/cork.jpg')] bg-repeat-y [background-size:100%_auto] ">
-          { usedImages.slice(1,-1).map((img, i) => (
+        <div className="absolute top-10 z-0 flex flex-row flex-wrap content-center justify-center gap-10 bg-[url('/imagenes/camara/cork.jpg')] [background-size:100%_auto] bg-repeat-y">
+          {usedImages.slice(1, -1).map((img, i) => (
             <motion.img
-            initial={{scale:1.05}}
-            animate={{scale:1}}
-            transition={{ ease:"easeOut", duration:.2}}
+              initial={{ scale: 1.05 }}
+              animate={{ scale: 1 }}
+              transition={{ ease: 'easeOut', duration: 0.2 }}
               key={i}
               src={img.src}
               alt='memories'
-              className={`object-cover h-70 shadow-lg  ${img.rotateClass}`}
-              loading="lazy"
-               decoding="async"
+              className={`h-70 object-cover shadow-lg ${img.rotateClass}`}
+              loading='lazy'
+              decoding='async'
             />
           ))}
-       </div>
+        </div>
       </div>
     </div>
   )

@@ -1,0 +1,26 @@
+.portafolio-bg{
+    color: #fff;
+
+  /* color base */
+  background-color: #e3f3fb;
+
+  /* capas */
+  background-image:
+      /* líneas horizontales de la cuadricula */
+      linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+
+      /* líneas verticales */
+      linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+
+      /* degradado vertical (al fondo de todo) */
+      linear-gradient(
+        to bottom,              /* vertical */
+        #ebf0f5 0%,             /* color base */
+        #dfecfb 100%            /* color más claro o más luminoso */
+      );
+
+  background-size:
+      40px 40px,   /* cuadricula horizontal */
+      40px 40px,   /* cuadricula vertical */
+      100% 100%;   /* degradado */
+}

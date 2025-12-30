@@ -24,3 +24,8 @@
       40px 40px,   /* cuadricula vertical */
       100% 100%;   /* degradado */
 }
+
+.selected-tab{
+  color:red;
+  
+}

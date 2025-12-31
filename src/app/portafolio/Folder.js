@@ -96,7 +96,7 @@ export default function Folder() {
     setTab(tab)
   }
   return (
-    <div className='relative z-10 mx-auto mt-5 flex w-full max-w-6xl flex-col items-start px-4 transition-transform duration-500 ease-in-out hover:rotate-0 md:rotate-2 md:px-0'>
+    <div className='relative z-10 mx-auto mt-5 flex w-full max-w-5xl flex-col items-start px-4 transition-transform duration-500 ease-in-out hover:rotate-0 md:rotate-2 md:px-0'>
       <div className='flex gap-2'>
         {' '}
         <button

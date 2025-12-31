@@ -3,7 +3,7 @@ import { IconMailFast } from '@tabler/icons-react'
 export default function Postit() {
   return (
     <div className='hidden md:block'>
-      <div className='absolute top-25 -left-35 z-10 flex h-80 w-80 rotate-12 flex-col items-center overflow-hidden bg-amber-300 p-5 text-black shadow-xl transition-all duration-300 ease-in-out hover:left-6 hover:rotate-0'>
+      <div className='absolute top-25 -left-35 z-10 z-15 flex h-80 w-80 rotate-12 flex-col items-center overflow-hidden bg-amber-300 p-5 text-black shadow-xl transition-all duration-300 ease-in-out hover:left-6 hover:rotate-0'>
         <h1 className='font-mansalva rotate-2 text-4xl font-bold underline underline-offset-4'>
           Contact Info
         </h1>

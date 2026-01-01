@@ -100,9 +100,7 @@ export default function Camarita() {
             >
               <div className='relative z-0 bg-black'>
                 {imgSrc ? (
-                  <Image
-                    width={700}
-                    height={800}
+                  <img
                     src={imgSrc.src}
                     alt='Random'
                     className='max-h-[90vh] max-w-[90vw] object-contain md:max-h-[60vh] md:max-w-[60vw]'

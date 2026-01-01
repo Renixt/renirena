@@ -14,7 +14,7 @@ export default function Navbar() {
         {' '}
         <IconBrandLinkedinFilled
           size={30}
-          color='#1F2937'
+          color='#0e073a'
           className='transition-transform hover:scale-105 hover:cursor-pointer hover:fill-[#2d516f]'
         />
       </a>
@@ -26,7 +26,7 @@ export default function Navbar() {
         {' '}
         <IconBrandGithubFilled
           size={30}
-          color='#1F2937'
+          color='#0e073a'
           className='transition-transform hover:scale-105 hover:cursor-pointer hover:fill-[#2d496f]'
         />
       </a>
@@ -39,7 +39,7 @@ export default function Navbar() {
         {' '}
         <IconFileCvFilled
           size={30}
-          color='#1F2937'
+          color='#0e073a'
           className='transition-transform hover:scale-105 hover:cursor-pointer hover:fill-[#2d496f]'
         />
       </a>

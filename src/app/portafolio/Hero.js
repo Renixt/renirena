@@ -36,7 +36,7 @@ export default function Hero() {
           <div className='mt-2 ml-4'>
             <div className='mb-1 flex items-center gap-4 transition-transform hover:scale-101'>
               <IconStarFilled size={20} color='#0e073a' />
-              <h2 className='text-gray-700'>Software Engineer</h2>
+              <h2 className='text-gray-700'>Software Engineer student</h2>
             </div>
             <div className='mb-1 flex items-center gap-4 transition-transform hover:scale-101'>
               <IconMapPinFilled size={20} color='#0e073a' />

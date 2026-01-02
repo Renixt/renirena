@@ -12,7 +12,7 @@ import { useState } from 'react'
 export default function Folder() {
   var experience = [
     {
-      title: 'Web and Biomedical Applications Development',
+      title: 'Web and Biomedical Applications Development (Social Service)',
       place: 'UNAM - National Autonomous University of Mexico',
       time: 'January 2025 – August 2025 ',
       bulletpoints: [

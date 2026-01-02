@@ -3,6 +3,8 @@ import Hero from './Hero'
 import Navbar from './Navbar'
 import Folder from './Folder'
 import Postit from './Postit'
+import Projects from './Projects'
+import { motion } from 'framer-motion'
 export default function portafolio() {
   return (
     <div className='font-source-code-pro portafolio-bg relative min-h-screen overflow-hidden'>

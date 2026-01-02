@@ -16,6 +16,7 @@ export default function portafolio() {
 
       <Hero />
       <Folder />
+      <Projects />
     </div>
   )
 }

@@ -5,8 +5,16 @@ export default function Projects() {
   var projects = [
     {
       title: 'Personal Website',
-      description:
-        'I built a personal website to explore my creativity through web development. I constantly add new ideas, such as a section for reviewing coffee shops in my city, a gallery to showcase photos taken with my camera and a feature for saving and tracking movies as I watch them.',
+      description: (
+        <>
+          I built a personal website to explore my creativity through web
+          development. I constantly add new ideas, such as a section for{' '}
+          <strong>reviewing coffee shops</strong> in my city,{' '}
+          <strong>a gallery</strong> to showcase photos taken with my camera and
+          a feature for saving and <strong>tracking movies</strong> as I watch
+          them.
+        </>
+      ),
       technologies: ['Next.js', 'Framer Motion', 'Supabase'],
       drawing: '/portafolio/renirena3.png',
       complete: '/portafolio/renirena.png',
@@ -31,7 +39,7 @@ export default function Projects() {
       <div className='flex flex-row flex-wrap content-center items-center justify-center'>
         {/*PROJECT CARD DIV */}
         {projects.map((project, i) => (
-          <div key={i} className='relative min-h-[600px] min-w-xl'>
+          <div key={i} className='relative min-h-[600px] min-w-[500px]'>
             {/*FIRST PAPER BALL FRAME */}
             <motion.div
               className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'

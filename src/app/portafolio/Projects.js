@@ -32,9 +32,17 @@ export default function Projects() {
   ]
   return (
     <div className='mx-auto mt-20 flex flex-col items-center text-black'>
-      <h1 className='font-mansalva text-5xl font-extrabold text-[#0e073a] md:text-7xl'>
-        My Projects
-      </h1>
+      <div className='flex'>
+        <p className='font-mansalva -rotate-45 text-7xl font-extrabold text-[#0e073a]'>
+          '<span className='text-[#c83838]'>´</span>
+        </p>
+        <h1 className='font-mansalva text-5xl font-extrabold text-[#0e073a] md:text-7xl'>
+          My Projects
+        </h1>{' '}
+        <p className='font-mansalva mb-10 rotate-45 text-7xl font-extrabold text-[#0e073a]'>
+          '<span className='text-[#c83838]'>´</span>
+        </p>
+      </div>
 
       <div className='flex flex-row flex-wrap content-center items-center justify-center'>
         {/*PROJECT CARD DIV */}
@@ -58,8 +66,12 @@ export default function Projects() {
               viewport={{ amount: 'all', margin: '-110px', once: true }}
               transition={{ duration: 0, delay: i * 0.1 }}
             >
-              <img src='/portafolio/paper2.png' className='h-5xl' />
+              <img
+                src='/portafolio/paper2.png'
+                className='h-auto w-[500px] md:w-[650px]'
+              />
             </motion.div>
+
             <a href={project.url} target='_blank' rel='noopener noreferrer'>
               {' '}
               <motion.div
@@ -82,13 +94,13 @@ export default function Projects() {
                   />
                 </div>
 
-                <h2 className='font-mansalva mt-5 text-3xl font-extrabold text-gray-900'>
+                <h2 className='my-5 text-4xl font-extrabold text-gray-800'>
                   {project.title}
                 </h2>
                 <p className='text-gray-900'>{project.description}</p>
                 <div className='mt-2 flex flex-row content-center justify-center gap-3 text-sm text-[#c83838]'>
                   {project.technologies.map((tech, i) => (
-                    <p key={i} className='p-1 underline'>
+                    <p key={i} className='p-1'>
                       {tech}
                     </p>
                   ))}

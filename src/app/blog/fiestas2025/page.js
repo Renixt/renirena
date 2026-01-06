@@ -5,39 +5,39 @@ import { IconDeer } from '@tabler/icons-react'
 export default function page() {
   const intercambio = [
     {
-      img: '/fiestas2025/IM000039.jpg',
+      img: '/fiestas2025/IM000039.JPG',
       desc: 'Fiestas 2025 – Tia recibiendo una agenda'
     },
     {
-      img: '/fiestas2025/IM000040.jpg',
+      img: '/fiestas2025/IM000040.JPG',
       desc: 'Fiestas 2025 – Abrazo'
     },
     {
-      img: '/fiestas2025/IM000041.jpg',
+      img: '/fiestas2025/IM000041.JPG',
       desc: 'Fiestas 2025 – Naty recibe cuaderno de dibujo'
     },
     {
-      img: '/fiestas2025/IM000042.jpg',
+      img: '/fiestas2025/IM000042.JPG',
       desc: 'Fiestas 2025 – Tia erica y su baileys'
     },
     {
-      img: '/fiestas2025/IM000043.jpg',
+      img: '/fiestas2025/IM000043.JPG',
       desc: 'Fiestas 2025 – Roxana con calcetines nuevos'
     },
     {
-      img: '/fiestas2025/IM000044.jpg',
+      img: '/fiestas2025/IM000044.JPG',
       desc: 'Fiestas 2025 – Aniz del Mono'
     },
     {
-      img: '/fiestas2025/IM000045.jpg',
+      img: '/fiestas2025/IM000045.JPG',
       desc: 'Fiestas 2025 – Nueva cartera para la abuela'
     },
     {
-      img: '/fiestas2025/IM000046.jpg',
+      img: '/fiestas2025/IM000046.JPG',
       desc: 'Fiestas 2025 – Un gran regalo tejido'
     },
     {
-      img: '/fiestas2025/IM000047.jpg',
+      img: '/fiestas2025/IM000047.JPG',
       desc: 'Fiestas 2025 – Parece alcohol pero es un shampoo'
     }
   ]
@@ -61,7 +61,7 @@ export default function page() {
           <div className='flex flex-wrap items-baseline justify-center'>
             <div className='mb-10 flex flex-col items-center justify-center'>
               <img
-                src='/fiestas2025/IM000048.jpg'
+                src='/fiestas2025/IM000048.JPG'
                 className='h-50 shadow-md md:h-96'
               ></img>
               <p className='img-des flex w-80 text-center transition-transform duration-200 ease-in-out hover:scale-101'>
@@ -71,7 +71,7 @@ export default function page() {
             </div>
             <div className='mb-10 flex flex-col items-center justify-center'>
               <img
-                src='/fiestas2025/IM000052.jpg'
+                src='/fiestas2025/IM000052.JPG'
                 className='h-50 shadow-md md:h-96'
               ></img>
               <p className='img-des flex w-60 text-center'>
@@ -96,12 +96,12 @@ export default function page() {
           </h2>
           <div className='flex flex-wrap'>
             <img
-              src='/fiestas2025/IM000051.jpg'
+              src='/fiestas2025/IM000051.JPG'
               className='w-2xl shadow-md'
             ></img>
 
             <img
-              src='/fiestas2025/IM000032.jpg'
+              src='/fiestas2025/IM000032.JPG'
               className='w-2xl shadow-md'
             ></img>
           </div>

@@ -28,3 +28,15 @@ background-repeat: repeat;
 
 }
 
+/* BLOG INDEX*/
+
+.bg-notebook{
+ background-color: #fff9db; /* amarillo cuaderno */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 22px,
+    rgba(0, 0, 0, 0.08) 23px
+  );
+  background-size: 100% 24px;
+}

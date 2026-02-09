@@ -13,7 +13,7 @@ export default function page() {
   const [watchlist, setWatchlist] = useState([])
 
   //useEffect: render one time when the comp renders
-  //fetch info from the json file
+  //fetch info from the api
   useEffect(() => {
     fetch('/api/escine') //fetch
       .then(response => response.json()) //make it sjon

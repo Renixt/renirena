@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, Link } from 'react'
 import '../styles.css'
 import MovieCard from './MovieCard'
 
@@ -109,12 +109,14 @@ export default function MoviesGrid({ movies, watchlist, toggleWatchlist }) {
 
       <div className='movies-grid'>
         {filteredMovies.map(movie => (
-          <MovieCard
-            movie={movie}
-            key={movie.id}
-            toggleWatchlist={toggleWatchlist}
-            isWatchlisted={watchlist.includes(movie.id)} //true si watchlist tiene la movie
-          ></MovieCard>
+          <a key={movie.id} href={`/escine/${encodeURIComponent(movie.id)}`}>
+            {' '}
+            <MovieCard
+              movie={movie}
+              toggleWatchlist={toggleWatchlist}
+              isWatchlisted={watchlist.includes(movie.id)} //true si watchlist tiene la movie
+            ></MovieCard>
+          </a>
         ))}
       </div>
     </div>

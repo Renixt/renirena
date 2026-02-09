@@ -20,14 +20,13 @@ export default function MovieCard({ movie, isWatchlisted, toggleWatchlist }) {
   }
 
   return (
-    <div key={movie.id} className='movie-card'>
-      <Image
+    <div key={movie.id} className='movie-card h-[490px]'>
+      <img
         width={250}
-        height={350}
-        src={`/images/${movie.image}`}
+        src={`${movie.image}`}
         alt={movie.title}
         onError={handleError}
-      ></Image>
+      ></img>
       <div className='movie-card-info'>
         <div>
           <span className='movie-card-genre'>{movie.genre}</span>

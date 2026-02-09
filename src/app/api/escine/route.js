@@ -2,10 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import { NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabaseClient'
+import { request } from 'http'
 
 export async function GET() {
   const { data, error } = await supabase.from('movies').select('*').order('id')
-
+  console.log('GETTTT')
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 })
   }

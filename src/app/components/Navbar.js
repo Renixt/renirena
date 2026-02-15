@@ -29,6 +29,13 @@ export default function Navbar() {
             className='mx-3 h-15 transition-transform duration-300 ease-in-out hover:scale-107 hover:cursor-pointer'
           ></img>
         </a>
+        <a href='/blog'>
+          {' '}
+          <img
+            src='/blog/llaves.png'
+            className='mx-3 h-15 transition-transform duration-300 ease-in-out hover:scale-107 hover:cursor-pointer'
+          ></img>
+        </a>
         <br></br>
       </div>
     </div>

@@ -3,7 +3,9 @@ import { supabase } from '@/lib/supabaseClient'
 
 //params viene del folder slug
 export async function GET(request, { params }) {
-  const { slug } = await params //deve poner await porque es una promesa
+  //{} es desestructuracion de objetos lo mismo que 'const slug = params.slug'
+  const { slug } = await params //deve poner await porque es una promesa, await resuelve la promesa
+  /*en 'use client' se puede const { slug } = useParams() y funciona . Un componente cliente NO puede ser async.*/
   try {
     const { data, error } = await supabase
       .from('movies')

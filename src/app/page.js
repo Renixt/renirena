@@ -30,7 +30,7 @@ export default function Home() {
   }
 
   return (
-    <main className='flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-bl from-[#B73E64] to-[#FFD1EB]'>
+    <main className='conat flex h-full w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-bl from-[#B73E64] to-[#FFD1EB]'>
       <div className=''>
         <h1 className='font-inter text-3xl font-[700] text-white md:text-9xl'>
           renirena
@@ -54,6 +54,13 @@ export default function Home() {
           <img
             src='imagenes/escineee.png'
             className='m-2 h-40 cursor-pointer transition-transform duration-200 ease-in-out hover:scale-104 hover:rotate-1 md:h-110'
+          />
+        </button>
+
+        <button onClick={() => router.push('/blog')}>
+          <img
+            src='blog/llaves.png'
+            className='m-2 h-40 cursor-pointer transition-transform duration-200 ease-in-out hover:scale-104 hover:rotate-1 md:h-90'
           />
         </button>
       </div>

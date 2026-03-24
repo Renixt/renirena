@@ -64,9 +64,30 @@ export default function page() {
         </div>
       </div>
 
-      {/*REVIEWS */}
       <div className='container2 relative z-10 mx-0 my-10 flex justify-center pt-30'>
-        <div className='-pl-50 z-10 -mr-20 flex flex-col items-center gap-10'></div>
+        <div className='-pl-50 z-10 -mr-20 flex flex-col items-center gap-10'>
+          {/*FORM ADD */}
+          <form>
+            <div className=''>
+              <label>Tu Nombre</label>
+              <input type='text' className='bg-white'></input>
+            </div>
+          </form>
+
+          {/*REVIEWS */}
+          <div className='m-5 rotate-12 rounded-sm bg-white shadow-2xl'>
+            <div className='flex justify-end gap-4 px-3'>
+              <div>
+                <h1 className='text-4xl font-extrabold text-black'>
+                  Renata Castillo
+                </h1>
+                <p className='ml-2'>holaaaaaaaaaaaaaaaaaaaaaaa</p>
+              </div>
+
+              <h1 className='text-blue rotate-6 text-8xl font-extrabold'>9</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -6,16 +6,23 @@ import Navbar from '../components/Navbar'
 
 export default function page() {
   const entries = [
+    ,
     {
-      title: '> Fiestas 2025',
-      href: '/blog/fiestas2025',
-      date: '01/01/26',
+      title: '> Vento',
+      href: '/blog/vento',
+      date: '06/05/26',
       styles: 'font-mansalva'
     },
     {
       title: '> Oda a Nave 2',
       href: '/blog/banos',
       date: '08/02/26',
+      styles: 'font-mansalva'
+    },
+    {
+      title: '> Fiestas 2025',
+      href: '/blog/fiestas2025',
+      date: '01/01/26',
       styles: 'font-mansalva'
     }
   ]

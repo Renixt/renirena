@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar'
 
 export default function page() {
   const entries = [
-    ,
+    
     {
       title: '> Vento',
       href: '/blog/vento',

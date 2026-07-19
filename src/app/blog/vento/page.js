@@ -70,17 +70,20 @@ export default function Vento() {
   return (
     <div className='bg-gradient-to-bl from-[#B73E64] to-[#FFD1EB] bg-center'>
       <Navbar />
+      <audio src="/sonidos/musica/blin.mp3" autoPlay loop></audio>
+
     
       <div className='flex min-h-screen w-screen flex-col items-center justify-center text-[#244896]/70 mt-30'>
         
-        <img src="/blog/vento/VENTO.png" className="-mb-170 z-10 h-130 "></img>
+        <img src="/blog/vento/VENTO.png" className="-mb-170 z-10 h-130 transition-transform duration-400 ease-in-out hover:scale-105"></img>
 
         <div className='container flex flex-wrap justify-center'>
           {galeria.map((foto, key) => (
             <div className='group relative' key={key}>
               <img
                 src={foto.img}
-                className={` h-10 shadow-lg transition-transform ease-in-out  md:h-70 border-2 border-pink-700`}
+                className={` h-10 shadow-lg transition-transform duration-1000 ease-in-out  md:h-70 border-2 border-pink-700 hue-rotate-90 hover:hue-rotate-0`}
+
               ></img>
               <p className='absolute bottom-0 left-0 p-1 font-serif text-white opacity-0 transition-opacity duration-300 ease-in-out'>
                 {foto.desc}

@@ -6,6 +6,12 @@ import Navbar from '../components/Navbar'
 
 export default function page() {
   const entries = [
+     {
+      title: '> Cumple 23',
+      href: '/blog/cumple23',
+      date: '12/04/26',
+      styles: 'font-mansalva'
+    },
     
     {
       title: '> Vento',

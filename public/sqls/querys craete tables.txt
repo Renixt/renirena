@@ -1,0 +1,180 @@
+CREATE TABLE coffees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(150) NOT NULL,
+    menu_image VARCHAR(255) DEFAULT NULL,
+    image1 VARCHAR(255) DEFAULT NULL,
+    image2 VARCHAR(255) DEFAULT NULL,
+    location TEXT DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO coffees (id, name, menu_image, image1, image2, location) VALUES 
+(1, 'Cima99', '/imagenes/miniatura/m1.png', '/imagenes/cafes/cima99.jpg', NULL, 'Rodríguez Familiar no. 42 Col. Jardines de Querétaro.'), 
+(2, 'Ninety', '/imagenes/miniatura/m2.png', '/imagenes/cafes/ninety1.jpg', '/imagenes/cafes/ninety2.jpg', 'Blvrd Hacienda del Jacal 409, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro.'), 
+(3, 'Maniatica', '/imagenes/miniatura/m3.png', '/imagenes/cafes/man.jpg', '/imagenes/cafes/man2.jpg', 'Hacienda Grande 310-Local 5 y 6, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro., Mexico'), 
+(4, 'Pretty Lamb', '/imagenes/miniatura/m5.png', '/imagenes/pl-2.jpg', '/imagenes/pl-1.jpg', 'Álamos & La Loma, Qro.'), 
+(5, 'Qrosant', '/imagenes/miniatura/m10.png', NULL, NULL, 'C. Venustiano Carranza 2A-A, Centro, 76000 Santiago de Querétaro'), 
+(6, 'the coffee', '/imagenes/miniatura/m1.png', NULL, NULL, 'Calzada de los Arcos, 29 - Jardines de Querétaro - Querétaro'), 
+(7, 'Sensorio', '/imagenes/miniatura/m6.png', '/imagenes/cafes/sen1.jpg', '/imagenes/cafes/sen2.jpg', 'Blvrd Jardines de la Hacienda, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro., Mexico'), 
+(8, 'Villemont', '/imagenes/miniatura/m4.png', '/imagenes/cafes/vill1.jpg', '/imagenes/cafes/vill2.jpg', 'Hacienda El Jacal 701 Int 101 Col El Jacal, 76180 Santiago De Querétaro, Querétaro'), 
+(9, 'Blume', '/imagenes/miniatura/m7.png', '/imagenes/cafes/blume1.jpg', '/imagenes/cafes/blume2.jpg', 'Boulevard Jardines De La Hacienda 305, 76180 Santiago De Queretaro, Queretaro'), 
+(10, 'Cafele', '/imagenes/miniatura/m9.png', '/imagenes/cafes/cafetato.jpg', '/imagenes/cafes/cafetato2.jpg', 'Boulevard de las ciencias 3045, Santa Fé, 76230 Juriquilla, Qro.'), 
+(11, 'Clemente', '/imagenes/miniatura/noname.png', '/imagenes/cafes/jard1.jpg', '/imagenes/cafes/jard2.jpg', 'Jardines de la Hacienda'), 
+(12, 'Silverio', '/imagenes/miniatura/m8.png', '/imagenes/cafes/sr.jpg', '/imagenes/cafes/sr2.jpg', 'Blvd. Hacienda del Jacal 211, Jardines de la Hacienda, 76180 Santiago de Querétaro, Qro.'), 
+(13, 'Fondo Café', '/imagenes/miniatura/fondo.png', '/imagenes/cafes/fondo1.jpg', '/imagenes/cafes/fondo2.jpg', 'Rodríguez Familiar 12, Jardines de Queretaro, 76020 Santiago de Querétaro, Qro.'); 
+CREATE TABLE coffees_reviews (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    coffee_id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    order_name VARCHAR(150) NOT NULL,
+    order_price DECIMAL(10,2) DEFAULT NULL,
+    order_review TEXT DEFAULT NULL,
+    CONSTRAINT fk_coffee_review 
+        FOREIGN KEY (coffee_id) 
+        REFERENCES coffees(id) 
+        ON DELETE CASCADE 
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO coffees_reviews (id, coffee_id, name, order_name, order_price, order_review) VALUES 
+(103, 1, 'Rena', 'Frapuccino', 90, 'Cafetería cerca de los arcos, toda la zona es muy bonita, tienen espacio en terraza y adentro. Un poco tardado ya que solo atendía una chica, pero muy rico frapuccino con crema batida.'), 
+(104, 1, 'Rena', 'Moka', 90, 'Estaba rico pero tardan mucho.'), 
+(105, 2, 'Rena', 'Frappe Caramel', NULL, 'No sabe a caramel.'), 
+(106, 2, 'Rena', 'Frappe capuchino', NULL, 'Bueno y buena crema batida.'), 
+(107, 3, 'Rena', 'Frappuccino', 55, 'Buen frappe barato, pay rico, tenia crema batida!'), 
+(108, 3, 'Valentina', 'Piña Colada', NULL, 'piña colada, 9/10, sin rebaja, sabía solo a hielo pero rica.'), 
+(109, 3, 'Reni', 'Chai Verde', NULL, 'Chai verde muy bueno, pero dulce, da sed pero rico 9/10'), 
+(110, 4, 'Rena', 'Latte', NULL, 'Buen ambiente, muy bonito lugar y gatita. Menu con poca variedad y late frío. 3/10'), 
+(111, 4, 'Reni', 'Limonada de Bugambilia', NULL, 'Bonita y rica, 5/10. Falta postre para acompañar.'), 
+(112, 5, 'Rena', 'Frapuccino', NULL, 'Frappe pequeño, no sabe tanto a café pero con buena crema batida.'), 
+(113, 5, 'Rena', 'Croissant con Nutella', 75, 'Muy bueno.'), 
+(114, 5, 'Rena', 'Moka Caliente', NULL, 'Amargo y no tan bueno.'), 
+(115, 6, 'Rena', 'Café con helado de vainilla', NULL, 'Delicioso, espeso y rico, aunque caro y pequeño.'), 
+(116, 6, 'Rena', 'Galleta de Chispas', NULL, 'Galletas meh, bonito lugar coreano, gran variedad de bebidas diferentes.'), 
+(117, 7, 'Reni', 'Te Chai', 70, 'Lugar muy bonito, pero la atención y el menú no es tan amistoso para el cliente. Cuando fuimos no tenían ingredientes para dos bebidas y tuvimos que cambiarlas por otras. El té chai no es de los mejores que he probado, creo que está por debajo del promedio.'), 
+(118, 7, 'Valentina', 'Afogato', 80, 'Buena ambientación pero tenia una vibra algo pretenciosa. No hubo la mejor atención y no pudieron aclarar desde el principio la falta de ingredientes.'), 
+(119, 7, 'Sofi', 'Latte', 80, 'Lugar muy pequeño. Su menu es muy limitado y cuando fuimos no tenían la mayoría de las bebidas. No mencionaron que no tenían matcha hasta que llegaron las otras bebidas.'), 
+(120, 8, 'Rena', 'Taro', 70, 'Bonita decoracion de osito.'), 
+(121, 8, 'Rena', 'Frapuccino', 80, 'Frapuccino rico, con crema batida. Buen cafe.'), 
+(122, 8, 'Rena', 'Latte', 80, 'Latte grande muy diluido. Pero late mediano rico.'), 
+(123, 9, 'Reni', 'Chai', NULL, 'Chai con un hit de expreso. Estuvo rico, muy aromático y especiado. Me gustó.'), 
+(124, 9, 'Valentina', 'Frappe Taro', NULL, 'Cremoso, ligero, buena trituracion de hielo, no sabía a agua al final. Sabor dulce sin empalagar.'), 
+(125, 9, 'Rena', 'Frappuccino', NULL, 'Gran frappe. Buen tamaño. Crema batida.'), 
+(126, 10, 'Rena', 'Frappe Capuchino', 75, 'Muy bonito lugar, pero el frappe muy aguado, más leche que café.'), 
+(127, 10, 'Rena', 'Caramel Latte', 72, 'Le faltaba algo de caramelo, sabía más a leche.'), 
+(128, 11, 'Valentina', 'Frapper Frutos Rojos', NULL, 'Frappe de frutos natural muy bueno, no tan dulce, bastante fresco pero le faltó un poco de azúcar.'), 
+(129, 11, 'Reni', 'Frapuccino Moka', NULL, 'Frappe de mocha está bueno, sabe a chocomilk con café como esperado.'), 
+(130, 11, 'Rena', 'Frapuccino', NULL, 'Muy bueno buen tamaño, gran crema batida, duró hasta el final. 8/10'), 
+(131, 12, 'Reni', 'Mango Chamoyada', NULL, 'Está muy bien licuado y el sabor es bueno. Podría usar más mango congelado y menos hielo.'), 
+(132, 12, 'Rena', 'Frapuccino', NULL, 'Buen sabor, buena crema batida y granitos de café. Lugar agradable.'), 
+(133, 13, 'Reni', 'Dirty Chai Frio', NULL, 'El lugar es muy bonito, el mobiliario cómodo y la atención buena. No tardaron tanto. 8/10'), 
+(134, 13, 'Valentina', 'Butter Biscoff', NULL, 'Cremoso, perfecto balance entre dulce y café. Ambientación bonita. 10/10'), 
+(135, 13, 'Rena', 'Frappe Moka', NULL, 'Muy rico, buen tamaño de vaso, sin crema batida. Lugar muy bonito. 9/10'), 
+(136, 13, 'Rena', 'French Toast', NULL, 'Bonita presentación pero no tan rico.');
+
+
+CREATE VIEW coffees_with_reviews AS
+SELECT
+  c.id,
+  c.name,
+  c.location,
+  c.menu_image,
+  c.image1,
+  c.image2,
+  r.name AS reviewer,
+  r.order_name,
+  r.order_price,
+  r.order_review
+FROM
+  coffees c
+  LEFT JOIN coffees_reviews r ON c.id = r.coffee_id;
+
+
+MOVIES
+
+
+CREATE TABLE movies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    image TEXT DEFAULT NULL,
+    genre VARCHAR(100) DEFAULT NULL,
+    rating DECIMAL(3,1) DEFAULT NULL,
+    created_at DATE DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO movies (id, title, image, genre, rating, created_at) VALUES 
+(1, 'Wicked For Good', '/images/1.jpg', 'drama', 7.5, NULL), 
+(2, 'Chainsaw Man', '/images/2.jpg', 'anime', 9, NULL), 
+(3, 'Jujutsu Kaisen Movie', '/images/3.jpg', 'anime', 8.5, NULL), 
+(4, 'Together', '/images/4.jpg', 'body horror', 9.3, NULL), 
+(5, 'The Substance', '/images/5.jpg', 'body horror', 9, NULL), 
+(6, 'Superman', '/images/6.jpg', 'action', 10, NULL), 
+(7, 'Frankeistein', '/images/7.jpg', 'drama / action', 8, NULL), 
+(8, 'Sinners', '/images/8.jpg', 'period action', 8.5, NULL), 
+(9, 'Mickey 17', '/images/9.jpg', 'horror', 10, NULL), 
+(10, 'La Casa del Dragon', '/images/10.jpg', 'fantasy', 10, NULL), 
+(11, 'Kpop Demon Hunters', '/images/11.jpg', 'action / animation', 8.5, NULL), 
+(12, 'Anora', '/images/12.jpg', 'drama', 9, NULL), 
+(13, 'Flow', '/images/13.jpg', 'animation', 8, NULL), 
+(14, '28 years later', '/images/14.jpg', 'horror', 8.5, NULL), 
+(15, 'The Ugly Stepsister', '/images/15.jpg', 'horror', 8, NULL), 
+(16, 'Paddington in Peru', '/images/16.jpg', 'adventure / animation', 7, NULL), 
+(17, 'El leon no es como lo pintan', '/images/17.jpg', 'animation', 10, NULL), 
+(18, 'Thunderbolts', '/images/18.jpg', 'action', 8.5, NULL), 
+(19, 'Demon Slayer', '/images/19.jpg', 'anime', 9, NULL), 
+(20, 'Como entrenar a tu dragon', '/images/20.jpg', 'animation', 10, NULL), 
+(21, 'Robots Dream', '/images/21.jpg', 'animation', 9.5, NULL), 
+(22, 'five nights at freddy''s 2', '/images/22.jpg', 'animation / horror', 7.1, NULL), 
+(23, 'Mi amiga es una sirena', '/images/23.jpg', 'Fantasy', 10, NULL), 
+(24, 'Zootopia 2', '/images/24.jpg', 'Animation', 7.5, NULL), 
+(25, 'Avatar', '/images/25.webp', 'Action', 10, NULL), 
+(26, 'Bugonia', '/images/25.jpg', 'Horror', 7.6, '2025-12-27'), 
+(27, 'Bob Esponja: Search for Squarepants', '/images/26.jpg', 'Animation', 7, '2025-12-28'), 
+(31, 'Avatar: The Way of Water', '/images/27.webp', 'Action', 4, NULL), 
+(32, 'Avatar: Fire and Ash', '/images/28.webp', 'Action', 9, NULL), 
+(33, 'Monjas oscuras ', '/images/29.jpg', 'Horror', 6.5, NULL), 
+(34, 'Rio', 'https://tse4.mm.bing.net/th/id/OIP.Kibz8gnKEJzktqFELJamMwHaLH?rs=1&pid=ImgDetMain&o=7&rm=3', 'Animation', 9, NULL), 
+(35, 'Wake up dead man', 'https://static0.srcdn.com/wordpress/wp-content/uploads/2025/09/wake-up-dead-man_-a-knives-out-mystery-poster.jpg?q=49&fit=contain&w=480&dpr=2', 'Adventure', 10, NULL), 
+(36, 'Knives Out', 'https://tse1.mm.bing.net/th/id/OIP.ZHoGlpUt37pd-Js-lkD_hQHaK-?rs=1&pid=ImgDetMain&o=7&rm=3', 'Adventure', 10, NULL), 
+(37, 'Glass Onion', 'https://tse3.mm.bing.net/th/id/OIP.fgYOZUZOiuMcH2zkZKINOQHaNK?w=1080&h=1920&rs=1&pid=ImgDetMain&o=7&rm=3', 'Adventure', 8.5, NULL), 
+(38, 'La Empleada', 'https://mx.web.img2.acsta.net/img/ca/bf/cabf618d19f3157709b6b154c9335c3e.png', 'Drama', 8, NULL), 
+(39, 'Marty Supreme', 'https://static0.srcdn.com/wordpress/wp-content/uploads/sharedimages/2025/12/marty-supreme-poster.jpg?q=49&fit=contain&w=480&dpr=2', 'Drama', 6, NULL), 
+(40, 'Hamnet', 'https://image.tmdb.org/t/p/original/hVo0g5M8z1kuhzxQ51eCbF81wUh.jpg', 'Drama', 7, NULL), 
+(41, 'The Green Knight', 'https://tse4.mm.bing.net/th/id/OIP.niOYQDdiVm35YuEM71ojvAHaKe?w=1080&h=1527&rs=1&pid=ImgDetMain&o=7&rm=3', 'Fantasy', 8, NULL), 
+(42, 'MONKEY MAN', 'https://nicktiffany.com/wp-content/uploads/2024/04/monkeymanfeature.jpg', 'Action', 9, NULL), 
+(43, 'Cumbres Borrascosas', 'https://images.justwatch.com/poster/335570517/s718/wuthering-heights-2026.jpg', 'Drama', 7.5, NULL), 
+(44, 'District 9', 'https://m.media-amazon.com/images/M/MV5BMTM4OTI1OTM5NF5BMl5BanBnXkFtZTcwMzk5MTU1Mg@@._V1_FMjpg_UX1000_.jpg', 'Action', 9.2, NULL), 
+(45, '27 VESTIDOS', 'https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/500x659/products/2901432/5895831/MOVII8809__47110.1679554286.jpg?c=2', 'Drama', 5, NULL), 
+(46, 'GOAT', 'https://tse1.mm.bing.net/th/id/OIP.YvmAiQEko3xzmJL0wCnBrgHaKO?rs=1&pid=ImgDetMain&o=7&rm=3', 'Animation', 9, NULL), 
+(47, 'Spiderman into the spiderverse', 'https://4.bp.blogspot.com/-ZsxRguex4fc/Wxg5KUcAeKI/AAAAAAAAovs/Gt_eGJnV5gsfBO2q5IMGr6OCtLsSOtwJwCLcBGAs/s1600/De_CRjKVAAYwtdQ.jpg', 'Animation', 10, NULL), 
+(48, 'Proyecto fin del mundo', 'https://www.alertageekchile.cl/wp-content/uploads/2025/06/Proyecto-fin-del-mundo-1068x1335.jpg', 'Action', 9.5, NULL), 
+(49, 'HOKUM', 'https://tse3.mm.bing.net/th/id/OIP.H_TEUjoUxuLheYaRMtZffgHaK9?rs=1&pid=ImgDetMain&o=7&rm=3', 'Horror', 8.2, NULL), 
+(50, 'CLIKA', 'https://mx.web.img2.acsta.net/img/a6/be/a6bef37bc5525bc462f1a6807fbd96b8.jpg', 'Drama', 5, NULL), 
+(51, 'Lion', 'https://th.bing.com/th/id/R.c5ef0ae08f69b14097bfec26b7ea7315?rik=f1fzrWrwpToIgA&pid=ImgRaw&r=0', 'Drama', 8, NULL), 
+(52, 'Backrooms', 'https://cdn.discordapp.com/attachments/1291995124322140241/1513301302292254821/image-17.png?ex=6a273b2a&is=6a25e9aa&hm=b9fca7883e0d85052791abc168f41acdbdabf7510489d8a6dfe6fb2b90216db2', 'Horror', 7, NULL);
+CREATE TABLE movies_reviews (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    movie_id INT NOT NULL,
+    name VARCHAR(150) DEFAULT NULL,
+    review TEXT DEFAULT NULL,
+    rating INT DEFAULT NULL,
+    likes INT DEFAULT NULL,
+    CONSTRAINT fk_movie_review 
+        FOREIGN KEY (movie_id) 
+        REFERENCES movies(id) 
+        ON DELETE CASCADE 
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+MISONES
+CREATE TABLE missions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(150) NOT NULL,
+    description VARCHAR(150) NOT NULL,
+    type VARCHAR(100) DEFAULT NULL,
+    points DECIMAL(3,1) DEFAULT NULL,
+    created_at DATE DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO missions VALUES (4, 'OH LA LA!', 'Estudia un idioma por 30 minutos', 'diaria', 10,CURDATE() )

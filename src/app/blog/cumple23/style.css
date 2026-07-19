@@ -1,0 +1,30 @@
+.foto-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 2.5rem;      /* m-10 */
+}
+
+p{
+  font-family: monospace;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+margin-top: 10px;
+ 
+}
+
+.foto-card__img {
+    height: 22rem; /* h-72 */
+    width: auto;
+}
+
+.minecraft {
+   transition: transform ease-in-out;
+}
+
+.minecraft:hover{
+  transform: scale(1.2);
+}
